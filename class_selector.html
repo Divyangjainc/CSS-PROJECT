@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CSS: The class selector</title>
+    <style>
+        /* Makes all elements with hot-city class have red background */
+        .hot-city {
+            background-color: rgb(255, 0, 0);
+        }
+        
+        /* Makes all elements with warm-city class have orange background */
+        .warm-city {
+            background-color: rgb(255, 203, 71);
+        }
+        
+        /* Makes all elements with cold-city class have blue background */
+        .cold-city {
+            background-color: rgb(92, 222, 255);
+        }
+        
+        /* Makes all elements with capital-city class have bold text */
+        .capital-city {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>US Cities</h2>
+    <p>Color-coded according to perceived climate.</p>
+    <ul>
+        <li class="warm-city">Annapolis, Maryland</li>
+        <li class="cold-city capital-city">Augusta, Maine</li>
+        <li class="hot-city capital-city">Austin, Texas</li>
+        <li class="hot-city">New Orleans, Louisiana</li>
+        <li class="cold-city capital-city">Juneau, Alaska</li>
+        <li class="hot-city">Miami, Florida</li>
+        <li class="warm-city">San Francisco, California</li>
+    </ul>
+    
+    <h3>Legend:</h3>
+    <p class="hot-city">This is a city that I sweated in a lot when I visited.</p>
+    <p class="warm-city">This is a city that's hot enough for me to live in, but not so much that I sweat profusely.</p>
+    <p class="cold-city">This is a city that is too cold for me to ever live in.</p>
+</body>
+</html>

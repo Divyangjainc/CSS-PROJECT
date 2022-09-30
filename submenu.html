@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main
+        {   
+            background-color: black;
+            height:100px;
+            width: auto;
+            color: wheat;
+        }
+        .mainlist
+        {
+            list-style-type: none;
+            float: left;
+            padding: 10px;
+        }
+        .sub
+        {
+            padding: 0%;
+        }
+        .sublist
+        {
+            list-style-type: none;
+            padding: 0%;
+            visibility: hidden;
+        }
+        .mainlist:hover .sublist
+        {
+            visibility: visible;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <ul class="main">
+        <li class="mainlist">Home</li>
+        <li class="mainlist">About</li>
+        <li class="mainlist">Services
+            <ul class="sub">
+                <li class="sublist">Link1</li>
+                <li class="sublist">Link2</li>
+                <li class="sublist">Link3</li>
+            </ul>
+        </li>
+        <li class="mainlist">Contact us</li>
+    </ul>
+
+
+</body>
+</html>
+Footer
